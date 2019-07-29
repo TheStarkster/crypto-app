@@ -1,0 +1,110 @@
+@font-face{
+    font-family: 'Raleway-Light';
+    src: url(../assets/fonts/Raleway-Light.ttf);
+}
+@font-face{
+    font-family: 'Raleway-SemiBold';
+    src: url(../assets/fonts/Raleway-SemiBold.ttf);
+}
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2944a2;
+    background-image: linear-gradient(314deg, #2944a2 0%, #844b9c 100%);
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.RowContainer{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    width:100%;
+    height: 90%;
+}
+.Row{
+    width: 90%;
+    height:150px;
+    background-color: #a570bc;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+.Meter{
+    position: fixed;
+    width: 250px;
+    height: inherit;
+    background-color: #e4c5f1;
+    left:12%;
+}
+.btnContainer{
+    position: fixed;
+    width: 250px;
+    height: inherit;
+    background-color: transparent;
+    right:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#notifyBtn{
+    padding: 18px;
+    background: #8a5a9e;
+    color: white;
+    font-family: 'Raleway-Light';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+#notifyBtn:hover{
+    background: #9c69b1;
+}
+h4{
+    font-family: 'Raleway-Light';
+    color:rgb(66, 66, 66);
+    padding-top: 8px;
+}
+h1{
+    font-family: 'Raleway-SemiBold';
+    color:rgb(66, 66, 66);
+}
+i{
+    color:white;
+    font-size: 18px;
+}
+.reload{
+    margin: 8px;
+    margin-left: 38px;
+    margin-bottom: 30px;
+    padding: 14px;
+    width:24px;
+    height: 24px;
+    background: #8a5a9e;
+    color: white;
+    /* font-family: 'Raleway-Light'; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reload:hover{
+    background-color: #a570bc;
+}
+.ReloadContainer{
+    /* background-color: black; */
+    width:100%;
+    height: 10%;
+}
+
