@@ -1,24 +1,9 @@
 const electron = require('electron');
-const path = require('path');
-const BrowserWindow = electron.remote.BrowserWindow
+const remote = electron.remote;
 
-const notifyBtn = document.getElementById('notifyBtn');
+const closeBtn = document.getElementById('close');
 
-let win
-function createWindow() {
-    // Create the browser window.
-    win = new BrowserWindow({
-        width: 400,
-        height: 200,
-        frame: false,
-        webPreferences: {
-            nodeIntegration: true
-        }
-    })
-    win.loadFile('add.html')
-}
-
-
-notifyBtn.addEventListener('click', function (event) {
-    createWindow()
+closeBtn.addEventListener('click',function(e){
+    const windows = remote.getCurrentWindow();
+    windows.close();
 })

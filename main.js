@@ -1,5 +1,7 @@
 const { app, BrowserWindow, Menu } = require('electron');
+const path = require('path');
 const shell = require('electron').shell
+
 let win
 function createWindow() {
     // Create the browser window.
@@ -10,8 +12,6 @@ function createWindow() {
             nodeIntegration: true
         }
     })
-
-    
     Menu.setApplicationMenu(menu);
     win.loadFile('./src/index.html')
     win.on('closed', () => {
@@ -42,11 +42,11 @@ var menu = Menu.buildFromTemplate([
         ]
     },
     {
-        label:"About"
+        label: "About"
     },
     {
-        label:"Refresh",
-        click(){
+        label: "Refresh",
+        click() {
             app.relaunch();
         }
     }
@@ -63,3 +63,4 @@ app.on('activate', () => {
         createWindow()
     }
 })
+
